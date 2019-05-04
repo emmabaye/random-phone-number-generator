@@ -1,0 +1,14 @@
+#app-section {
+  margin-top: 10%;
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color: "red" !important;
+}
+
+h2 {
+  text-align: center;
+}
+
+.table {
+  margin-top: 10px;
+}

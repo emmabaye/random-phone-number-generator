@@ -1,4 +1,4 @@
 {
-	"verbose": true,
-	"ignore": ["e2e/*"]
+  "verbose": true,
+  "ignore": ["e2e/*", "server/*.json"]
 }

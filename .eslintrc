@@ -8,10 +8,7 @@
     "browser": true,
     "jest": true
   },
-  "plugins": [
-    "react",
-    "chai-friendly"
-  ],
+  "plugins": ["react", "chai-friendly"],
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 6,
@@ -32,27 +29,27 @@
     "comma-dangle": 0,
     "no-console": 0,
     "curly": ["error", "multi-line"],
-    "import/no-unresolved": [2, {
-      "commonjs": true
-    }],
-    "no-shadow": ["error", {
-      "allow": ["req", "res", "err"]
-    }],
-    "valid-jsdoc": ["error", {
-      "requireReturn": true,
-      "requireReturnType": true,
-      "requireParamDescription": false,
-      "requireReturnDescription": false
-    }],
-    "require-jsdoc": ["error", {
-      "require": {
-        "FunctionDeclaration": true,
-        "MethodDefinition": true,
-        "ClassDeclaration": true,
-        "ArrowFunctionExpression": true,
-        "FunctionExpression": true
+    "import/no-unresolved": [
+      2,
+      {
+        "commonjs": true
       }
-    }],
+    ],
+    "no-shadow": [
+      "error",
+      {
+        "allow": ["req", "res", "err"]
+      }
+    ],
+    "valid-jsdoc": [
+      "error",
+      {
+        "requireReturn": true,
+        "requireReturnType": true,
+        "requireParamDescription": false,
+        "requireReturnDescription": false
+      }
+    ],
     "no-unused-expressions": 0,
     "chai-friendly/no-unused-expressions": 2,
     "react/prop-types": 0,

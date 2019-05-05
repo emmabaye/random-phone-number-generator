@@ -10,16 +10,7 @@ env:
 cache:
   directories:
     - "node_modules"
-services:
-  - postgresql
-before_script:
-  - createuser emmabaye -s -U postgres
-  - createdb database_test --username=emmabaye 
-  - sequelize db:migrate
-  - sequelize db:seed:all
 after_success:
   - npm run coverage
-  - npm install -g codeclimate-test-reporter
-  - codeclimate-test-reporter < coverage/lcov.info
   - npm run test-client
   - codecov

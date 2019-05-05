@@ -1,11 +1,9 @@
-/* eslint-disable function-paren-newline */
-import path from "path";
-import {getPhoneNumbers} from "../controllers/phoneNumbersController";
+
+import { getPhoneNumbers } from "../controllers/phoneNumbersController";
 
 const routes = app => {
   app.get("/api/", (req, res) =>
-    res.send({ title: "Welcome to Random Phone Numbers Generator" })
-  );
+    res.status(200).send({ title: "Welcome to Random Phone Numbers Generator" }));
 
   app.get("/api/generate-numbers", getPhoneNumbers);
 
@@ -13,12 +11,13 @@ const routes = app => {
     res.status(404).send({
       status: "Error",
       message: "Resource not found"
-    })
-  );
+    }));
 
-  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(process.cwd(), "dist", "index.html"));
-  });
+  app.get("*", (req, res) =>
+    res.status(404).send({
+      status: "Error",
+      message: "Resource not found"
+    }));
 };
 
 export default routes;

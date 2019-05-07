@@ -8,5 +8,6 @@ module.exports = {
   setupFiles: ["./jestSetup.js"],
   snapshotSerializers: ["enzyme-to-json/serializer"],
   coverageDirectory: "./coverage/",
-  collectCoverage: true
+  collectCoverage: true,
+  testURL: 'http://localhost',
 };

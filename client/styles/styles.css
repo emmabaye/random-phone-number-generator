@@ -1,14 +1,35 @@
 #app-section {
   margin-top: 10%;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
   background-color: "red" !important;
+  min-width: 320px;
 }
 
 h2 {
   text-align: center;
+  margin-bottom: 10px;
+}
+
+h5 {
+  margin-left: 18px;
 }
 
 .table {
   margin-top: 10px;
+}
+
+a, button{
+  margin-left: 20px;
+  margin-bottom: 10px;
+  color: white !important;
+}
+
+.fa {
+  position: relative;
+  top: 3px;
+}
+
+th:last-child {
+  cursor: pointer;
 }

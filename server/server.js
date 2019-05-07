@@ -26,6 +26,7 @@ if (process.env.NODE_ENV !== "production") {
   app.use(webpackHotMiddleware(compiler));
 }
 app.use("/", express.static(`${process.cwd()}/dist`));
+app.use("/download", express.static(`${process.cwd()}/server/storage`));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 

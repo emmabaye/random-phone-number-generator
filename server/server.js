@@ -17,16 +17,15 @@ app.use(cors({ credentials: true, origin: true }));
 if (process.env.NODE_ENV !== "production") {
   const compiler = webpack(config);
 
-  app.use(
-    webpackDevMiddleware(compiler, {
-      noInfo: false,
-      publicPath: config.output.publicPath
-    })
-  );
+  app.use(webpackDevMiddleware(compiler, {
+    noInfo: false,
+    publicPath: config.output.publicPath
+  }));
   app.use(webpackHotMiddleware(compiler));
 }
-app.use("/", express.static(`${process.cwd()}/dist`));
+
 app.use("/download", express.static(`${process.cwd()}/server/storage`));
+app.use("/", express.static(`${process.cwd()}/dist`));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 

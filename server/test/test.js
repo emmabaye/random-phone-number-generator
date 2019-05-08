@@ -19,7 +19,7 @@ describe("Phone Number Generator", () => {
       .get("/not-exist")
       .expect(404)
       .end((err, res) => {
-        res.text.should.equal('{"status":"Error","message":"Resource not found"}');
+        res.text.should.equal('{"status":"Error","message":"Sorry, resource not found"}');
         res.status.should.equal(404);
         done();
       });

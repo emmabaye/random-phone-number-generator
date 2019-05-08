@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable import/no-extraneous-dependencies */
 import supertest from "supertest";
-// eslint-disable-next-line no-unused-vars
 import should from "should";
 
 let server = supertest.agent("http://localhost:3000");

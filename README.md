@@ -36,16 +36,18 @@ npm install
 
 Rename `sample.env` file with to `.env` and populate it with appropriate environment variable values, then proceed to the next step
 
+```bash
 # Start application in development mode
 npm run start-dev
 
 # If you want to build for production
 npm run build-server && npm run build-client
+
 # then start application in production mode
 npm run start
 ```
 
-## Running the tests and coverage
+### Running the tests and coverage
 
 ```bash
  # Run server-side tests

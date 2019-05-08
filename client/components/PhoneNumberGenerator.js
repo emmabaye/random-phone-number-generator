@@ -36,7 +36,7 @@ export default class PhoneNumberGenerator extends Component {
     }
 
     componentDidMount() {
-      this.generateNewNumbers("/download/generatedphonenumbers.json");
+      this.generateNewNumbers("/download/generatedPhoneNumbers.json");
     }
 
     render() {
@@ -50,18 +50,18 @@ export default class PhoneNumberGenerator extends Component {
           </button>
           <a
             className="btn btn-primary"
-            href="/download/generatedphonenumbers.json"
+            href="/download/generatedPhoneNumbers.json"
             target="_blank" >
           Download As JSON
           </a>
           <a className="btn btn-primary"
-            href="/download/generatedphonenumbers.txt"
+            href="/download/generatedPhoneNumbers.txt"
             target="_blank">
           Download As Text
           </a>
           <a
             className="btn btn-primary"
-            href="/download/generatedphonenumbers.csv"
+            href="/download/generatedPhoneNumbers.csv"
             target="_blank">Download As CSV
           </a>
           <h5>Total Phone Numbers Generated: {

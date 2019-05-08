@@ -16,7 +16,7 @@ const routes = app => {
   app.get("*", (req, res) =>
     res.status(404).send({
       status: "Error",
-      message: "Resource not found"
+      message: "Sorry, resource not found"
     }));
 };
 
